@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "MainFont";
+    font-style: italic;
+    src: url("fonts/main.ttf");
+}
+
+@font-face {
+    font-family: "HeadingFont";
+    font-style: italic;
+    src: url("fonts/heading.ttf");
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font: 1.5em "MainFont";
+    padding: 0 auto;
+    margin: 0;
+    background: rgba(20,10,14,0.74);
+    color: white;
+}
+
+h1 {
+    font: 6rem "HeadingFont";
+    color: blanchedalmond;
+    margin: 0;
+}
+
+a {
+    color: blanchedalmond;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: burlywood;
+    text-decoration-color: blanchedalmond;
+}
+
+.header {
+    background: rgba(20,10,14,0.74);
+}
+
+#head{
+    text-align: center;
+}
+
+.menu ul {
+    display: -webkit-flex;
+    display: flex;
+    background: rgba(39,21,34,0.91);
+    list-style: none;
+    margin: 0;
+    padding-left: auto;
+}
+
+.menu a {
+    font: 2rem "HeadingFont";
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+.menu a:hover {background: rgba(73,48,69,0.94)}
+
+.article {
+    margin-left: 3em;
+    margin-right: 1em;
+}
