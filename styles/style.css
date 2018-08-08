@@ -3,13 +3,13 @@
 @font-face {
     font-family: "MainFont";
     font-style: italic;
-    src: url("fonts/main.ttf");
+    src: url("../fonts/heading.otf");
 }
 
 @font-face {
-    font-family: "HeadingFont";
+    font-family: "MenuFont";
     font-style: italic;
-    src: url("fonts/heading.ttf");
+    src: url("../fonts/menu.ttf");
 }
 
 html {
@@ -20,14 +20,17 @@ body {
     font: 1.5em "MainFont";
     padding: 0 auto;
     margin: 0;
-    background: rgba(20,10,14,0.74);
     color: white;
 }
 
 h1 {
-    font: 6rem "HeadingFont";
+    font: 6rem "MainFont";
     color: blanchedalmond;
     margin: 0;
+}
+
+.p {
+    text-indent: 20px;
 }
 
 a {
@@ -40,34 +43,80 @@ a:hover {
     text-decoration-color: blanchedalmond;
 }
 
-.header {
-    background: rgba(20,10,14,0.74);
+hr {
+    margin: 0;
+    height: 6px;
+    border: 0;
 }
 
-#head{
-    text-align: center;
+.top {
+    height: 200px;
+    width: auto;
+    background: black;
+}
+
+.top p {
+    position: absolute;
+    top: 100px;
+    margin: 0 10px;
+    font: 3rem "MainFont";
+    font-style: italic;
 }
 
 .menu ul {
     display: -webkit-flex;
     display: flex;
-    background: rgba(39,21,34,0.91);
+    justify-items: flex-start;
+    background: white;
     list-style: none;
     margin: 0;
-    padding-left: auto;
 }
 
 .menu a {
-    font: 2rem "HeadingFont";
-    color: white;
+    font: 2rem "MenuFont";
+    color: black;
     text-decoration: none;
     padding: 1em;
     display: block;
 }
 
-.menu a:hover {background: rgba(73,48,69,0.94)}
+.menu a:hover {
+    background: rgba(238,162,53,0.98);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: white;
+}
+
+.border {
+    size: auto;
+    color: black;
+}
+
+.border img {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background: black;
+    color: white;
+}
 
 .article {
-    margin-left: 3em;
+    margin-left: 1em;
     margin-right: 1em;
+}
+
+.content iframe {
+    margin: 70px 0 0 30px;
+}
+
+.main [href]::after{
+    content: "⤴";
 }
