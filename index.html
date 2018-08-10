@@ -10,59 +10,30 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="top">
-            <p><b>bjct_</b></p>
-        </div>
-        <hr>
-        <nav class="menu">
+    <div class="nav_bar">
+        <div class="menu">
             <ul>
-                <li><a href="index.html">Главная страница</a></li>
-                <li><a href="">Проекты</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+                <li><a id="homepage_link" href=""><img id="homepage_pic" src="images/menu/normal/homepage.png"></a></li>
+                <li><a id="info_link" href=""><img id="info_pic" src="images/menu/normal/about_me.png"></a></li>
+                <li><a id="skills_link" href=""><img id="skills_pic" src="images/menu/normal/skills.png"></a></li>
+                <li><a id="work_link" href=""><img id="work_pic" src="images/menu/normal/work.png"></a></li>
+                <li><a id="contacts_link" href=""><img id="contacts_pic" src="images/menu/normal/contacts.png"></a></li>
             </ul>
-        </nav>
-        <hr>
-        <hr color="black">
+        </div>
     </div>
-    <div class="main">
-        <div class="left border">
-            <img src="images/background/squares1.png">
-            <img src="images/background/circles1.png">
-        </div>
-        <div class="content">
-            <div class="article">
-                <h3>Чей это за сайт?</h3>
-                <p>Это сайт <a href="https://vk.com/antonyprinzev" title="Страница автора в ВК">Принцевского Антона</a>.
-                    Я изучаю программирование:</p>
-                <ul>
-                    <li>Моим профильным языком является <strong>Python</strong>;</li>
-                    <li>Сейчас я изучаю языки вёрстки: <strong>HTML</strong> и <strong>CSS</strong>;</li>
-                    <li>А также язык программирования <strong>JavaScript</strong>.</li>
-                </ul>
-                <p>Так как мне нужна практика в веб-программировании, то я решил создать свой сайт.</p>
-                <h3>Подробнее об авторе</h3>
-                <p>Мне 14 лет, я перешёл в 8 класс. Провожу много времени за компьютером - занимаюсь чем-то
-                полезным и играю, смотрю видео; продолжите список всеми остальными совершенно бесполезными,
-                    но очень приятными вещами. </p>
-                <p>Делаю telegram-ботов на заказ, ещё много чего делаю - подробнее можно узнать,
-                перейдя по <a href="" title="Чем я занимаюсь">данной ссылке</a>.
-                Там вы можете найти интересующий вас товар или проект.
-                А если вам нужны иные, кроме <a href="" title="ВК страница автора">ВК</a>
-                    контакты, то...</p>
-                <h3>Мои контакты</h3>
-                <ul>
-                    <li><a href="https://github.com/AntChatsky">GitHub</a></li>
-                    <li><a></a></li>
-                    <li>Dicord - "Soundofsilence#3722"</li>
-                </ul>
+    <div class="container">
+        <div class="text-block">
+            <div class="greetings">
+                <p><b>Привет,<br> я Антон, <br> разработчик.</b></p>
             </div>
-            <iframe src="https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0&targets-hint=&default-sum=100&button-text=14&payment-type-choice=on&comment=on&hint=&successURL=file%3A%2F%2F%2FE%3A%2Fsite%2Findex.html&quickpay=shop&account=410016122587149" width="423" height="301" frameborder="0" allowtransparency="true" scrolling="no">
-            </iframe>
+            <div class="skills">
+                <p><b>Python / Web development / Arduino Smart Home</b></p>
+            </div>
+            <button class="contact_button">Связаться со мной</button>
         </div>
-        <div class="right border">
-            <img src="images/background/squares2.png">
-        </div>
+    </div>
+    <div class="background">
+        <img src="images/background/bigA.png">
     </div>
 </body>
 <script src="scripts/main.js"></script>
