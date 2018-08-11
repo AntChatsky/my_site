@@ -66,12 +66,16 @@ body {
     will-change: contents;
     position: relative;
     padding-left: 30px;
-    top: 30%;
+    top: 35%;
 }
 
 .greetings {
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 3em;
+    line-height: 2em;
+}
+
+.greetings h1 {
+    margin: 0;
 }
 
 .skills {
@@ -81,29 +85,33 @@ body {
 }
 
 .contact_button {
-    border: 5px solid rgba(79,239,0,0.98);
-    width: 10em;
-    height: 3em;
-    border-radius: 0.5em;
+    color: rgba(79,239,0,0.98);
+    font-size: 2em;
+    padding: 6px 15px;
+    border: 3px solid rgba(79,239,0,0.98);
+    text-decoration: none;
+    background: none;
+    border-radius: 5px;
+}
+
+.contact_button:hover {
+    color: black;
+    background: rgba(79,239,0,0.98);
 }
 
 .background{
     z-index: 0;
+    width: 700px;
+    height: 965px;
     overflow: hidden;
     position: absolute;
-    width: 1920px;
+    padding-left: 700px;
     top: 0;
-    bottom: 0;
-    right: 0;
-    left: auto;
-    margin: auto;
-    image-rendering: optimizeQuality;
+    left: 5%;
 }
 
 .background img{
-    width: 100%;
-}
-
-.container [href]::after{
-    content: "⤴";
+    float: right;
+    width: inherit;
+    height: inherit;
 }
