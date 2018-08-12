@@ -24,7 +24,7 @@ body {
 
 .nav_bar {
     background: rgba(24,24,24,0.98);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
@@ -70,12 +70,8 @@ body {
 }
 
 .greetings {
-    font-size: 3em;
-    line-height: 2em;
-}
-
-.greetings h1 {
-    margin: 0;
+    font-size: 70px;
+    line-height: 70px;
 }
 
 .skills {
