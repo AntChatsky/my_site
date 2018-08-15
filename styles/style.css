@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "MainFont";
+    font-family: "zero 5";
     font-style: normal;
-    src: url("../fonts/heading.otf");
+    src: url("../fonts/zero5.otf");
 }
 
 @font-face {
@@ -59,55 +59,12 @@ body {
     z-index: 1;
     padding-left: 90px;
     position: absolute;
-    height: 100%;
+    height: 90%;
 }
 
 .text-block {
     will-change: contents;
     position: relative;
     padding-left: 30px;
-    top: 35%;
-}
-
-.greetings {
-    font-size: 70px;
-    line-height: 70px;
-}
-
-.skills {
-    font-size: 150%;
-    float: top;
-    color: rgba(158,158,158,0.98);
-}
-
-.contact_button {
-    color: rgba(79,239,0,0.98);
-    font-size: 2em;
-    padding: 6px 15px;
-    border: 3px solid rgba(79,239,0,0.98);
-    text-decoration: none;
-    background: none;
-    border-radius: 5px;
-}
-
-.contact_button:hover {
-    color: black;
-    background: rgba(79,239,0,0.98);
-}
-
-.background{
-    z-index: 0;
-    width: 700px;
-    height: 965px;
-    overflow: hidden;
-    position: absolute;
-    padding-left: 700px;
-    top: 0;
-    left: 5%;
-}
-
-.background img{
-    float: right;
-    width: inherit;
-    height: inherit;
+    top: 40%;
 }

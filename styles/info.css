@@ -1,0 +1,51 @@
+@import "style.css";
+
+h1 {
+    color: #4EEA01;
+    font-size: 4rem;
+}
+
+p {
+    font-size: 20px;
+}
+
+.container {
+    width: 40%;
+    left: 5%;
+}
+
+.text-block {
+    display: block;
+    word-wrap: break-word;
+    position: absolute;
+    text-align: left;
+    top: 15%;
+}
+
+.text-block p a {
+    color: white;
+
+}
+
+.text-block a:hover {
+
+}
+
+.hologram {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 60%;
+}
+
+.hologram img {
+    position: absolute;
+    right: 0;
+    width: inherit;
+    height: auto;
+    display: block;
+}
+
+[href^="https"]:after {
+    content: "⤴";
+}
