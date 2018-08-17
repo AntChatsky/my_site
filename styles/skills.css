@@ -1,0 +1,87 @@
+@import "style.css";
+
+h1 {
+    color: #4EEA01;
+    font-size: 4rem;
+}
+
+p {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container {
+    width: 50%;
+    left: 5%;
+}
+
+.text-block {
+    display: block;
+    word-wrap: break-word;
+    position: absolute;
+    text-align: left;
+    top: 15%;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #EAC47E;
+    text-decoration-color: #A58753;
+}
+
+.info_cell {
+    margin: 70px 0;
+}
+
+.about {
+    font-size: 20px;
+}
+
+.info_cell ul {
+    font-size: 20px;
+    list-style: square;
+}
+
+.button_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.info {
+    margin: 0 20px;
+    cursor: default;
+    font-size: 20px;
+}
+
+.info::before {
+    content: "≈";
+}
+
+.price::after {
+    content: "₽";
+}
+
+.button {
+    color: #4EEA01;
+    font-size: 2em;
+    padding: 6px 15px;
+    border: 3px solid #4EEA01;
+    text-decoration: none;
+    background: none;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+
+.button:hover {
+    color: black;
+    background: #4EEA01;
+}

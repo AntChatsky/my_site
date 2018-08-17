@@ -16,21 +16,6 @@
     cursor: default;
 }
 
-.contact_button {
-    color: #4EEA01;
-    font-size: 2em;
-    padding: 6px 15px;
-    border: 3px solid #4EEA01;
-    text-decoration: none;
-    background: none;
-    border-radius: 5px;
-}
-
-.contact_button:hover {
-    color: black;
-    background: #4EEA01;
-}
-
 .background{
     z-index: 0;
     width: 700px;

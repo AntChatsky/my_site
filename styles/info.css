@@ -22,13 +22,13 @@ p {
     top: 15%;
 }
 
-.text-block p a {
+a {
     color: white;
-
 }
 
-.text-block a:hover {
-
+a:hover {
+    color: #EAC47E;
+    text-decoration-color: #A58753;
 }
 
 .hologram {
