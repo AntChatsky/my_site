@@ -18,8 +18,6 @@ html {
 
 body {
     background: rgba(31,32,33,0.98);
-    font: 1em "Open Sans";
-    color: white;
 }
 
 .nav_bar {
@@ -63,6 +61,8 @@ body {
 }
 
 .text-block {
+    font: 1em "Open Sans";
+    color: white;
     will-change: contents;
     position: relative;
     padding-left: 30px;
@@ -85,4 +85,12 @@ body {
 .button:hover {
     color: black;
     background: #4EEA01;
+}
+
+.jBox-title {
+    font: 30px "Open Sans";
+}
+
+.jBox-content {
+    font: 20px "Open Sans";
 }

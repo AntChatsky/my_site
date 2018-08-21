@@ -1,0 +1,62 @@
+@import "style.css";
+
+.magic_wall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 90px;
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    will-change: contents;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    list-style: none;
+}
+
+.hover_element {
+    margin: 0;
+    overflow: hidden;
+    height: 295px;
+    width: 255px;
+}
+
+.hover_element span {
+    display: none;
+}
+
+.hover_element div {
+    display: block;
+    position: relative;
+    height: inherit;
+    width: inherit;
+    overflow: hidden;
+    transition: all 250ms ease-in-out 50ms;
+}
+
+.hover_element div:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    opacity: 1;
+}
+
+.hover_element div:hover:after {
+    opacity: 0;
+}
+
+.hover_element div:hover {
+    transform: scale(1.05);
+}
+
