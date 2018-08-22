@@ -94,3 +94,7 @@ body {
 .jBox-content {
     font: 20px "Open Sans";
 }
+
+.jBox-Modal {
+    width: 60%;
+}
