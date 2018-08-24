@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Главная страница{% endblock %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="../static/styles/index.css">
+{% endblock %}
+{% block text_block %}
+<div class="greetings">
+    <span><b>Привет,<br>я Антон,<br>разработчик.</b></span>
+</div>
+<div class="skills">
+    <h3><b>Python / Web development / Arduino Smart Home</b></h3>
+</div>
+<a class="button" href="contacts.html">Связаться со мной</a>
+{% endblock %}
+{% block body %}
+{{ super() }}
+<div class="background">
+    <img src="../static/images/background/bigA.png">
+</div>
+{% endblock %}
+{% block js_scripts %}<script src="../static/scripts/index.js"></script>{% endblock %}

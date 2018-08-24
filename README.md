@@ -1,1 +1,1 @@
-This is my site, which is I'm creating with HTML, CSS, Javascript + JQuery.
+This is my site, which is I'm creating with HTML, CSS, Javascript + JQuery and python Flask library.
