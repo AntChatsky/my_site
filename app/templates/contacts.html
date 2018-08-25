@@ -1,33 +1,15 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Anton Prinzevski">
-    <meta name="description" content="SEO here">
-
-    <title>Контакты</title>
-    <link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../static/node_modules/jbox/Source/jBox.css">
-    <link rel="stylesheet" href="../static/styles/contacts.css">
-</head>
-<body>
-    <div class="nav_bar">
-        <div class="menu">
-            <ul>
-                <li><a id="homepage_link" href="index.html"><img id="homepage_pic" src="../static/images/menu/normal/homepage.png"></a></li>
-                <li><a id="info_link" href="info.html"><img id="info_pic" src="../static/images/menu/normal/about_me.png"></a></li>
-                <li><a id="skills_link" href="skills.html"><img id="skills_pic" src="../static/images/menu/normal/skills.png"></a></li>
-                <li><a id="work_link" href="work.html"><img id="work_pic" src="../static/images/menu/normal/work.png"></a></li>
-                <li><a id="contacts_link" href="contacts.html"><img id="contacts_pic" src="../static/images/menu/normal/contacts.png"></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="container">
-        <div class="text-block">
-        </div>
-    </div>
-</body>
-<script src="../static/node_modules/jquery/dist/jquery.min.js"></script>
-<script src="../static/node_modules/jbox/Source/jBox.min.js"></script>
-<script src="../static/scripts/contacts.js"></script>
-</html>
+{% extends "base.html" %}
+{% block title %}Мои контакты{% endblock %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="../static/styles/info.css">
+{% endblock %}
+{% block text_block %}
+{% endblock %}
+{% block body %}
+{{ super() }}
+<div class="hologram">
+    <img src="../static/images/hologram/green.png">
+</div>
+{% endblock %}
+{% block js_scripts %}<script src="../static/scripts/info.js"></script>{% endblock %}

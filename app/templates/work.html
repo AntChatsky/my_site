@@ -1,47 +1,29 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">3
-    <meta name="author" content="Anton Prinzevski">
-    <meta name="description" content="SEO here">
-    <title>Мои проекты</title>
-    <link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../static/node_modules/jbox/Source/jBox.css">
-    <link rel="stylesheet" href="../static/styles/work.css">
-</head>
-<body>
-    <div class="nav_bar">
-        <div class="menu">
-            <ul>
-                <li><a id="homepage_link" href="index.html"><img id="homepage_pic" src="../static/images/menu/normal/homepage.png"></a></li>
-                <li><a id="info_link" href="info.html"><img id="info_pic" src="../static/images/menu/normal/about_me.png"></a></li>
-                <li><a id="skills_link" href="skills.html"><img id="skills_pic" src="../static/images/menu/normal/skills.png"></a></li>
-                <li><a id="work_link" href="work.html"><img id="work_pic" src="../static/images/menu/normal/work.png"></a></li>
-                <li><a id="contacts_link" href="contacts.html"><img id="contacts_pic" src="../static/images/menu/normal/contacts.png"></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="magic_wall">
-        <ul class="gallery">
-            <li class="hover_element">
-                <div class="window_elem0">
-                    <img class="pic" src="../static/images/gallery/greenhouse.jpg">
-                    <span class="title0">Система автоматического выращивания растений GreenHouse</span>
-                    <span class="content0">Тут должен быть текст</span>
-                </div>
-            </li>
-            <li class="hover_element">
-                <div class="window_elem1">
-                    <img class="pic" src="../static/images/gallery/medicine_bot.jpg">
-                    <span class="title1">Медицинский telegram бот</span>
-                    <span class="content1"><img src="../static/images/gallery/modal_windows/medicine_bot.png">
-                    </span>
-                </div>
-            </li>
-        </ul>
-    </div>
-</body>
-<script src="../static/node_modules/jquery/dist/jquery.min.js"></script>
-<script src="../static/node_modules/jbox/Source/jBox.min.js"></script>
-<script src="../static/scripts/work.js"></script>
-</html>
+{% extends "base.html" %}
+{% block title %}Мои проекты{% endblock %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="../static/styles/work.css">
+{% endblock %}
+{% block body %}
+{{ super() }}
+<div class="magic_wall">
+    <ul class="gallery">
+        <li class="hover_element">
+            <div class="window_elem0">
+                <img class="pic" src="../static/images/gallery/greenhouse.jpg">
+                <span class="title0">Система автоматического выращивания растений GreenHouse</span>
+                <span class="content0">Тут должен быть текст</span>
+            </div>
+        </li>
+        <li class="hover_element">
+            <div class="window_elem1">
+                <img class="pic" src="../static/images/gallery/medicine_bot.jpg">
+                <span class="title1">Медицинский telegram бот</span>
+                <span class="content1"><img src="../static/images/gallery/modal_windows/medicine_bot.png">
+                </span>
+            </div>
+        </li>
+    </ul>
+</div>
+{% endblock %}
+{% block js_scripts %}<script src="../static/scripts/work.js"></script>{% endblock %}

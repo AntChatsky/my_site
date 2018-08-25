@@ -24,7 +24,7 @@ $( document ).ready(function () {
     };
 
     var names = {hmpg: "homepage", info: "about_me", skills: "skills", work: "work", contacts: "contacts"};
-    var path = "images/menu/";
+    var path = "../static/images/menu/";
 
     Object.keys(names).forEach(function (item) {
        mapObj[item]["link"].onmouseenter = function () {
