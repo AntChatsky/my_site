@@ -1,12 +1,13 @@
 from flask import Flask, render_template
-
+from forms import ContactForm
 
 app = Flask(__name__, static_url_path="/static")
+app.config.from_object("config")
 
 
 @app.route("/")
 @app.route("/homepage")
-def index_page():
+def homepage():
     return render_template("index.html")
 
 
@@ -25,9 +26,11 @@ def work_page():
     return render_template("work.html")
 
 
-@app.route("/contacts")
+@app.route("/contacts", methods=["GET", "POST"])
 def contacts_page():
-    return render_template("contacts.html")
+    form = ContactForm()
+
+    return render_template("contacts.html", form=form)
 
 
 @app.errorhandler(404)

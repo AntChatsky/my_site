@@ -2,14 +2,22 @@
 {% block title %}Мои контакты{% endblock %}
 {% block head %}
 {{ super() }}
-<link rel="stylesheet" href="../static/styles/info.css">
+<link rel="stylesheet" href="../static/styles/contacts.css">
 {% endblock %}
 {% block text_block %}
+<h1>Contact me</h1>
+<form action="" method="post" name="contact">
+    {{ form.hidden_tag() }}
+    <div class="top">
+        <p>{{form.name(size=80)}}</p>
+        <p>{{form.mail(size=80)}}</p>
+    </div>
+    <div class="main">
+        <p>{{form.main()}}</p>
+    </div>
+    <div class="bottom">
+        <p><input type="submit" value="Отправить"></p>
+    </div>
+</form>
 {% endblock %}
-{% block body %}
-{{ super() }}
-<div class="hologram">
-    <img src="../static/images/hologram/green.png">
-</div>
-{% endblock %}
-{% block js_scripts %}<script src="../static/scripts/info.js"></script>{% endblock %}
+{% block js_scripts %}<script src="../static/scripts/contacts.js"></script>{% endblock %}
