@@ -1,1 +1,63 @@
 @import "style.css";
+
+h1 {
+    color: #4EEA01;
+    font-size: 4rem;
+}
+
+.container {
+    width: 80%;
+}
+
+.text-block {
+    top: 20%;
+    padding-left: 8%;
+}
+
+.contact-table {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    background: #37393b;
+    box-sizing: border-box;
+    border: none;
+    text-align: left;
+    font: 20px "Open Sans";
+    color: white;
+    margin: 10px 10px 0 0;
+    height: 50px;
+    width: inherit;
+}
+
+.row1 input {
+    flex-grow: 1;
+}
+
+.row2 input {
+    flex-grow: 2;
+}
+
+.row3 {
+    height: 300px;
+}
+
+.row3 input {
+    flex-grow: 2;
+    height: inherit;
+}
+
+.submit {
+    cursor: pointer;
+    margin-top: 30px;
+    width: 20%;
+}

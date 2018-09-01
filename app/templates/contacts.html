@@ -5,19 +5,20 @@
 <link rel="stylesheet" href="../static/styles/contacts.css">
 {% endblock %}
 {% block text_block %}
-<h1>Contact me</h1>
-<form action="" method="post" name="contact">
+<h1>Связаться со мной</h1>
+<form action="" method="post" name="contact" class="contact-table">
     {{ form.hidden_tag() }}
-    <div class="top">
-        <p>{{form.name(size=80)}}</p>
-        <p>{{form.mail(size=80)}}</p>
-    </div>
-    <div class="main">
-        <p>{{form.main()}}</p>
-    </div>
-    <div class="bottom">
-        <p><input type="submit" value="Отправить"></p>
-    </div>
+    <ul class="row row1">
+        {{form.name}}
+        {{form.mail}}
+    </ul>
+    <ul class="row row2">
+        {{form.subject}}
+    </ul>
+    <ul class="row row3">
+        {{form.main}}
+    </ul>
+    <input class="submit" type="submit" value="Отправить">
 </form>
 {% endblock %}
 {% block js_scripts %}<script src="../static/scripts/contacts.js"></script>{% endblock %}
