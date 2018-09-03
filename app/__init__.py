@@ -1,5 +1,8 @@
+# -*- coding: utf-8 -*-
+
 from flask import Flask, render_template, redirect, url_for, flash, request
-from forms import ContactForm
+from forms import ContactForm, OrderForm
+from backend import mail
 
 app = Flask(__name__, static_url_path="/static")
 app.config.from_object("config")
@@ -28,10 +31,18 @@ def work_page():
 
 @app.route("/contacts", methods=["GET", "POST"])
 def contacts_page():
-    form = ContactForm()
+    data = request.args.get("type")
+
+    if data == "order":
+        form = OrderForm()
+
+    else:
+        form = ContactForm()
 
     if request.method == 'POST' and form.validate():
-        flash("Письмо успешно отправлено!")
+        mail(subject=form.subject.data, main=form.main.data,
+             name=form.name.data, mail=form.mail.data)
+
         return redirect(url_for("contacts_page"))
 
     return render_template("contacts.html", form=form)
